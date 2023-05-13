@@ -17,9 +17,9 @@ function Car{
     constructor(make, model, year,isAvailable){
         this.make = make
         this.model = model
-        this.year = this.year
-        this.isAvailable = this.isAvailable;
-
+        this. year= year
+        this.isAvailable = isAvailable
+        
     }
     toggleAvailability(){
         this.isAvailable= !this.isAvailable
@@ -101,8 +101,8 @@ class Question {
       return answer === this.correctAnswer;
     }
   }
-  console.log(question.checkAnswer("Nairobi")); // Outputs: true
-console.log(question.checkAnswer("Kenya")); // Outputs: false
+  console.log(question.checkAnswer("Nairobi")); 
+console.log(question.checkAnswer("Kenya")); 
 
 // 2. Create a Quiz class with the following properties:
 // ● questions(array):An array of Question objects.
