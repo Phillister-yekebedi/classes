@@ -13,12 +13,12 @@
 // toggleAvailability that changes the isAvailable property to its opposite value (true to
 // false, false to true)
 
-function Car{
+class Car{
     constructor(make, model, year,isAvailable){
-        this.make = make
-        this.model = model
-        this. year= year
-        this.isAvailable = isAvailable
+        this.make = make;
+        this.model = model;
+        this. year= year;
+        this.isAvailable = isAvailable;
         
     }
     toggleAvailability(){
@@ -27,7 +27,7 @@ function Car{
 
 }
 let car = new Car("mercedes", "E-s class", 2020, true)
-console.log(car)
+console.log(Car)
 
 
 
@@ -38,7 +38,7 @@ console.log(car)
 // ● rentalEndDate (Date object): The end date of the rental period.
 // The Rental class or function constructor should also have a method called
 // calculateRentalDuration that returns the rental duration in days.
-function Rental{
+class Rental{
     constructor(car, rentername,rentalStartDate,rentalEndDate){
         this.car = car
         this.rentername = rentername
